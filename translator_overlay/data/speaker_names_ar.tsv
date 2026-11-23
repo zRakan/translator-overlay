@@ -1,0 +1,723 @@
+# Speaker names, English<TAB>Arabic (matched in lower case; a leading "The " and a trailing number are handled in code).
+#
+# Part 1 (the first block of names): the game's speaker labels with reviewed Arabic spellings, taken from speaker_names_ar.tsv of
+# vi-translator/vi-translator-desktop (https://github.com/vi-translator/vi-translator-desktop, commit ce43778). MIT License:
+#   Copyright (c) the vi-translator-desktop authors
+#   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
+#   to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+#   and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+#   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+#   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+#   IN THE SOFTWARE.
+# Part 2 (after the "part 2" line): single-word names that part 1 lacks; transliterations by this project, not reviewed.
+Abe	آيب
+Abel	آبيل
+Accomplice	الشريك
+Actor	الممثل
+Addict	المدمن
+Admin	المشرف
+Aggressor	المعتدي
+Alan	آلان
+Ali	علي
+All	الجميع
+Alvan	ألفان
+Andre Ye	أندريه يي
+Andrea	أندريا
+Andreina	أندرينا
+Andrew	أندرو
+Andrés	أندريس
+Andy	آندي
+Annabelle	أنابيل
+Announcer	المذيع
+Arlo	آرلو
+Arnold	أرنولد
+Assistant	المساعد
+Associate Production Coordinator	منسق الإنتاج المساعد
+Atreus	أتريوس
+Attacker	المهاجم
+Attendant	المضيف
+ATV Rider	سائق الدراجة الرباعية
+Audience	الجمهور
+Authenticator	خبير التوثيق
+Automated Voice	الصوت الآلي
+Aviator	الطيار
+Bachelorette	صاحبة حفل توديع العزوبية
+Bae-Luxe	بي-لوكس
+Bagman	حامل الحقيبة
+Bailey	بيلي
+Bank Manager	مدير البنك
+Bank Teller	موظف البنك
+Barry	باري
+Bartender	الساقي
+Bassist	عازف الباص
+Beach Goer	مرتاد الشاطئ
+Beachgoer	مرتاد الشاطئ
+Beau	بو
+Beau Carson	بو كارسون
+Beefslap	بيفسلاب
+Beelzebub	بعلزبول
+Beggar	المتسول
+Benicio	بينيسيو
+Bert	بيرت
+Bianca Celestino	بيانكا سيليستينو
+Big Mike	بيغ مايك
+Biker	سائق الدراجة النارية
+Billionaire	الملياردير
+Billy	بيلي
+Bird	بيرد
+Blair	بلير
+Bledar	بليدار
+Boat Owner	مالك القارب
+Boater	راكب القارب
+Bob	بوب
+Bodega the DJ	بوديغا الدي جي
+Bodybuilder	لاعب كمال الأجسام
+Bones	بونز
+Boobie	بوبي
+Book Club Member	عضو نادي الكتاب
+Booker	بوكر
+Boss	الزعيم
+Bouncer	حارس الملهى
+Boyfriend	الحبيب
+Brad	براد
+Brainwashing Voice	صوت غسل الدماغ
+Bret	بريت
+Bret Vogel	بريت فوغل
+Brian	براين
+Briana	بريانا
+Bride	العروس
+Brien	براين
+Brittney	بريتني
+Buck Wilder	باك وايلدر
+Bud	باد
+Bunjee Jumper	ممارس القفز بالحبال
+Burim	بوريم
+Businessman	رجل الأعمال
+Buyer	المشتري
+Bystander	أحد المارة
+Caden	كايدن
+Caden O	كايدن أو
+Cai	كال
+Cal	كال
+Caleb	كايلب
+Caller	المتصل
+Camera Operator	مشغل الكاميرا
+Cameraman	المصور
+Cameron	كاميرون
+Camila	كاميلا
+Car Squatter	المقيم في السيارة
+Car Surfer	راكب سطح السيارة
+Cartel Captain	قائد الكارتل
+Cartel Member	عضو الكارتل
+Cartel Security	أمن الكارتل
+Carter	كارتر
+Cash City	كاش سيتي
+Cash City Member	عضو كاش سيتي
+Cassie	كاسي
+Castro	كاسترو
+Cat	كات
+Cecilia	سيسيليا
+Celebrity	المشهور
+Celine	سيلين
+Cellmate	رفيق الزنزانة
+Cerise	سيريس
+Charles	تشارلز
+Chase	تشيس
+Chef	الطاهي
+Chester	تشيستر
+Chester Fuller	تشيستر فولر
+Chimp	الشمبانزي
+Chronos	كرونوس
+Chuck	تشاك
+Cisco	سيسكو
+Civilian	المدني
+Cleaner	عامل النظافة
+Clerk	البائع
+Client	العميل
+Client's Associate	شريك العميل
+Clint	كلينت
+Clubber	مرتاد الملهى
+CO Wilson	ضابط السجن ويلسون
+Coast Guard	خفر السواحل
+Coastguard	خفر السواحل
+Colby	كولبي
+Collie	كولي
+Commentary	المعلق
+Como	كومو
+Companion	المرافق
+Computer	الكمبيوتر
+Construction Worker	عامل البناء
+Consultant	المستشار
+Cook	الطباخ
+Cop	الشرطي
+Cops	رجال الشرطة
+Crazed Man	الرجل المجنون
+Crazed Woman	المرأة المجنونة
+Creeps	المتطفلون
+Criminal	المجرم
+Crowd	الحشد
+Crowd Member	أحد الحشد
+Cullen	كولن
+Customer	الزبون
+Cyclist	راكب الدراجة
+César	سيزار
+Dairy Farmer	مزارع الألبان
+Dancer	الراقص
+Danny	داني
+Dante	دانتي
+Dardan	داردان
+Darianna	داريانا
+Daughter	الابنة
+Dave	ديف
+Dealer	المروّج
+Dealer's Goon	بلطجي المروّج
+Demon	الشيطان
+Deputy	نائب الشريف
+Detainee	المحتجز
+Devil's Dozen Contact	وسيط ديفلز دوزن
+Dice	دايس
+Diego	دييغو
+Director	المخرج
+Dirty Cop	الشرطي الفاسد
+Dispatch	غرفة العمليات
+Dispatcher	موظف غرفة العمليات
+DJ	الدي جي
+DJ Clipse	دي جي كليبس
+DJ Pretzel	دي جي بريتزل
+Dobbs	دوبس
+Doctor	الطبيب
+Dodo	دودو
+Dodo Rising Dudes	شباب دودو رايزينغ
+Dog	الكلب
+Domestobot	دوميستوبوت
+Domingo	دومينغو
+Donatello	دوناتيلو
+Donnie	دوني
+Dook	دوك
+Dook's Guy	رجل دوك
+Doorman	البواب
+Dorean	دوريان
+Doris	دوريس
+Doug	دوغ
+Drag Queen	المؤدي الاستعراضي
+Dre'Quan	دريكوان
+Driver	السائق
+Drivers	السائقون
+Drummer	عازف الطبول
+Drunk	السكران
+Drunken Man	الرجل السكران
+Dunk	دانك
+DWNPLY	داون بلاي
+Ecologist	عالم البيئة
+Eddie	إيدي
+EJ	إي جي
+Elonzo	إلونزو
+Emcee	مقدم الحفل
+Emelda	إميلدا
+Emilio	إميليو
+Employee	الموظف
+Enemy	العدو
+Enemy Leader	زعيم الأعداء
+Enforcer	المنفّذ
+Enrique Romero	إنريكي روميرو
+Entourage	الحاشية
+Erjon	إرجون
+Ernesto	إرنستو
+Estate Agent	الوكيل العقاري
+Eucia	لوسيا
+Evelyn	إيفلين
+Everyone	الجميع
+Fan	المعجب
+FAP Guerilla	مقاتل إف إيه بي
+Farmer	المزارع
+Felipe	فيليبي
+Felix	فيليكس
+Fernando	فرناندو
+FIB Agent	عميل إف آي بي
+Filmer	المصوّر
+Final Chapter	فاينل تشابتر
+Final Chapter Leader	زعيم فاينل تشابتر
+Final Chapter Member	عضو فاينل تشابتر
+Firefighter	رجل الإطفاء
+Fisherman	الصياد
+Fitzroy	فيتزروي
+Florencio	فلورنسيو
+Floyd Martin	فلويد مارتن
+Francisco	فرانسيسكو
+Frank	فرانك
+Frankie	فرانكي
+Fred	فريد
+Freddie	فريدي
+Friend	الصديق
+Gabriel	غابرييل
+Gal	الفتاة
+Galecki	غاليكي
+Gang Member	عضو العصابة
+Gator	غيتور
+Gene	جين
+Ghost	الشبح
+Gil	غيل
+Giorgio	جورجيو
+Girl	الفتاة
+Girlfriend	الحبيبة
+Grandchild	الحفيد
+Ground Crew	طاقم الأرض
+Grunt	الجندي
+Guard	الحارس
+Guardia Brother	أحد الإخوة غوارديا
+Guardia Brothers	الإخوة غوارديا
+Guest	الضيف
+Guest Services	خدمة الضيوف
+Gun Nut	مهووس الأسلحة
+Gunman	المسلح
+Gustavo	غوستافو
+Guy	الشاب
+Gymgoer	مرتاد النادي الرياضي
+Hairdresser	مصفف الشعر
+Halifax	هاليفاكس
+Hammer Lady	سيدة المطرقة
+Handler	المشرف
+Hank	هانك
+Harper	هاربر
+Harvey	هارفي
+Hector	هيكتور
+Heiress	الوريثة
+Heli Dispatch	مركز توجيه المروحيات
+Helicopter Dispatch	مركز توجيه المروحيات
+Hiker	المتنزه
+Hitman	القاتل المأجور
+Hitman Herbert	القاتل المأجور هربرت
+HOA Rep	ممثل جمعية الملاك
+Hollow Earther	المؤمن بالأرض المجوفة
+Homeless Attorney	المحامي المشرد
+Hoodlum	البلطجي
+Horatio	هوراشيو
+Host	المضيف
+Hostage	الرهينة
+Hostage-taker	محتجز الرهائن
+Hostess	المضيفة
+Hotel Guest	نزيل الفندق
+Hugh	هيو
+Hunter	الصياد
+Husband	الزوج
+IAA	آي إيه إيه
+Ian	إيان
+Igucia	لوسيا
+Influencer	المؤثر
+Inmate	السجين
+Instructor	المدرب
+Intercom	الاتصال الداخلي
+Interviewer	المحاور
+Intruder	المتسلل
+Investor	المستثمر
+Italian	الإيطالي
+J-Wang	جي-وانغ
+Jack Hoffman	جاك هوفمان
+Jack Of Hearts	جاك أوف هارتس
+Jacki	جاكي
+Jackie	جاكي
+Jackson	جاكسون
+Jada Watts	جادا واتس
+Janet	جانيت
+Jasen	جيسون
+Jasir	جاسر
+Jaso'n	جيسون
+Jason	جيسون
+Jason and Lucia	جيسون ولوسيا
+Jasoo	جيسون
+Jaylah	جايلا
+Jeff	جيف
+Jenna	جينا
+Jenny	جيني
+Jeremy	جيريمي
+Jerenny	جيريمي
+Jescn	جيسون
+Jeson	جيسون
+Jess	جيس
+Jimmy	جيمي
+Jimmy's Friend	صديق جيمي
+JK	جي كي
+Joey	جوي
+Jordan	جوردان
+Jordy	جوردي
+José	خوسيه
+Jpson	جيسون
+Juan Carlos	خوان كارلوس
+Judd	جاد
+Judge	القاضي
+Judge Screech	القاضي سكريتش
+Junkie	المدمن
+Kai	كاي
+Kala	كالا
+Kamal	كمال
+Kandi	كاندي
+Karim	كريم
+Kat	كات
+KD	كي دي
+Kent	كينت
+Kenton	كينتون
+Kevin	كيفن
+Kid	الفتى
+Kingfisher	أحد الكينغفيشرز
+Kingfishers	الكينغفيشرز
+Kingpin	الزعيم
+Kirk	كيرك
+Kodak	كوداك
+Kolt	كولت
+Kolt Leader	زعيم الكولت
+Kordell	كورديل
+Kordell's Wife	زوجة كورديل
+Kyle	كايل
+Kylie	كايلي
+L Licia	لوسيا
+Lady	السيدة
+Landlord	صاحب العقار
+Lauren	لورين
+LaVaughn	لافون
+Leader	الزعيم
+Leif Åland	ليف أولاند
+Levi	ليفاي
+Lexy Campbell	ليكسي كامبل
+Lieutenant	الملازم
+Linda	ليندا
+Little Sam	ليتل سام
+Liz	ليز
+Loader	عامل التحميل
+Local	أحد السكان
+Locals	السكان المحليون
+Lookout	المراقب
+Lorena	لورينا
+Lori	لوري
+Loti	لوري
+Lucia	لوسيا
+Lucie	لوسيا
+Lucip	لوسيا
+Lucky	لاكي
+Ludia	لوسيا
+Luis	لويس
+Lupia	لوسيا
+Luqia	لوسيا
+Lycia	لوسيا
+Male Fan	المعجب
+Maleek	مليك
+Maleek Rivers	مليك ريفرز
+Man	الرجل
+Manager	المدير
+Mandy	ماندي
+Manny Muscles	ماني ماسلز
+Manuel	مانويل
+Marcel	مارسيل
+Marco	ماركو
+Marine	جندي البحرية
+Mario	ماريو
+Marlon	مارلون
+Marshall	مارشال
+Marta	مارتا
+Marti	مارتي
+Martin	مارتن
+Marv	مارف
+Maryam	مريم
+Mascot	التميمة
+Matthias	ماتياس
+Mattia	ماتيا
+Matty	ماتي
+Mechanic	الميكانيكي
+Megan	ميغان
+Merc	المرتزق
+Merman	رجل البحر
+Mia	ميا
+Micky	ميكي
+Middleman	الوسيط
+Minimart Weirdo	غريب الأطوار في المتجر
+Miss Mojo	الآنسة موجو
+Mister Mangrove	السيد مانغروف
+Mitch	ميتش
+Mobster	رجل العصابات
+Model	عارضة الأزياء
+Molly	مولي
+Monterossa	مونتيروسا
+Moses	موسى
+Mother	الأم
+Ms. Sharleen	الآنسة شارلين
+Mugger	اللص
+Mutandis Agent	عميل موتانديس
+Méndez	مينديز
+Narrator	الراوي
+Nason	جيسون
+Natalie	ناتالي
+Nate	نيت
+Nayib	نجيب
+Neighbor	الجار
+Nicole	نيكول
+Noah	نوح
+NOOSE	نوز
+Nurse	الممرضة
+O Brian	براين
+Officer	الضابط
+Officer Gutierrez	الضابط غوتيريز
+Officer Jackson	الضابط جاكسون
+Officers	الضباط
+Oil Baron	قطب النفط
+Old Man	الرجل العجوز
+Omar	عمر
+Onlooker	المتفرج
+Opponent	الخصم
+Owner	المالك
+Papa Audacity	بابا أوداسيتي
+Paramedic	المسعف
+Paramedics	المسعفون
+Parole Officer	ضابط المراقبة
+Parrot	الببغاء
+Partygoer	مرتاد الحفلة
+Pason	جيسون
+Passenger	الراكب
+Passerby	أحد المارة
+Patient	المريض
+Patron	الزبون
+Patty	باتي
+Paul	بول
+Paulo	باولو
+Peck Peck	بيك بيك
+Peewee Staff	موظف بيوي
+Peggy	بيغي
+Penelope	بينيلوبي
+Pepe	بيبي
+Pete	بيت
+Petra	بيترا
+Pharmacist	الصيدلي
+Phonecall Recording	تسجيل المكالمة
+Pianist	عازف البيانو
+Pilot	الطيار
+Pilot Pete	الطيار بيت
+Pimple	بيمبل
+Podcast Guru	خبير البودكاست
+Police	الشرطة
+Pooch	بوتش
+Prankster	صاحب المقالب
+President Russo	الرئيس روسو
+Pricilla	بريسيلا
+Prison Escapees	الهاربون من السجن
+Prison Guard	حارس السجن
+Prison Recording	تسجيل السجن
+Prisoner	السجين
+Producer	المنتج
+Prosecutor	المدعي العام
+Protester	المتظاهر
+Racer	المتسابق
+Radio	الراديو
+Rafa	رافا
+Raina	راينا
+Randy	راندي
+Ranger	حارس المتنزه
+Raph	راف
+Raul	راؤول
+Raymond	رايموند
+Real Estate Agent	الوكيل العقاري
+Receptionist	موظف الاستقبال
+Recruit	المجند
+Reporter	المراسل
+Reseller	البائع
+Resident	أحد السكان
+Rhonda	روندا
+Ricardo	ريكاردو
+Ricky	ريكي
+Rider	الراكب
+Rita	ريتا
+Rob	روب
+Robber	اللص
+Robot	الروبوت
+Robot Voice	صوت الروبوت
+Rocco's Handler	مدير أعمال روكو
+Rochelle	روشيل
+Rocky	روكي
+Rodney	رودني
+Rolo	رولو
+Rondell	رونديل
+Ronny	روني
+Roscoe	روسكو
+Rosebud	روزبد
+Roxy	روكسي
+Royce	رويس
+Rude Fan	المعجب الوقح
+Runner	العداء
+RunThaGauntlet	رن ذا غانتليت
+RydeMe	رايد مي
+Ryleigh	رايلي
+Sahara AI	ساهارا للذكاء الاصطناعي
+SAL	سال
+Sal	سال
+Salesman	البائع
+Saleswoman	البائعة
+Sam	سام
+Sam B	سام بي
+Sam the Bookie	سام وكيل المراهنات
+Samantha	سامانثا
+Sandy	ساندي
+Santiago	سانتياغو
+Santino	سانتينو
+Sasha	ساشا
+Savon	سافون
+Saxophonist	عازف الساكسفون
+Scarlet Sun	سكارليت صن
+Scarlett	سكارليت
+Scav	سكاف
+Scientist	العالم
+Scumbag	الحقير
+Seashark Dog	كلب السي شارك
+Security	الأمن
+Security Guard	حارس الأمن
+Security System	نظام الأمن
+Self Driving Car	السيارة ذاتية القيادة
+Selina	سيلينا
+Seller	البائع
+Sergeant Quacks	الرقيب كواكس
+Server	النادل
+Sex Robots	الروبوتات الرفيقة
+Sexyy Red	سيكسي ريد
+Shanese	شانيز
+Shayna	شاينا
+Shirley	شيرلي
+Shooter	مطلق النار
+Silas	سايلس
+Sir Todd Bancroft	السير تود بانكروفت
+Skye	سكاي
+Smoker	المدخن
+Smuggler	المهرب
+Smuggler Leader	زعيم المهربين
+Sniper	القناص
+Snitch	الواشي
+Soap Woman	بائعة الصابون
+Soldier	الجندي
+Sparky	سباركي
+Spectator	المتفرج
+Spirit	الروح
+Sprunk Scientist	عالم سبرانك
+Sprunk Security	أمن سبرانك
+Staff	الموظفون
+Staff Member	الموظف
+Stefanie	ستيفاني
+Stefanie Gates	ستيفاني غيتس
+Steve	ستيف
+Stevie J	ستيفي جيه
+Store Manager	مدير المتجر
+Store Owner	صاحب المتجر
+Stranaer	الغريب
+Stranger	الغريب
+Strangers	الغرباء
+Stripper	الراقصة
+Stylist	مصفف الشعر
+Sunner	المتشمس
+Supervisor	المشرف
+Suspect	المشتبه به
+Suzette	سوزيت
+Swamp Creature	مخلوق المستنقع
+Swamp Witch	ساحرة المستنقع
+SWAT	القوات الخاصة
+SWAT Leader	قائد القوات الخاصة
+Sweatjuicy	سويت جوسي
+SWEETPIECOSMO	سويت باي كوزمو
+Synthol User	مستخدم السينثول
+Table Lady	سيدة الطاولة
+Taxi Driver	سائق سيارة الأجرة
+Teagan	تيغان
+Teller	أمين الصندوق
+Terro	تيرو
+The Dimez	الدايمز
+The Gentrifier	المطور العقاري
+The Man	الرجل
+The Other Man	الرجل الآخر
+Thiago	تياغو
+Thief	اللص
+Thug	البلطجي
+Tiger	تايغر
+Tip Dollaz	تيب دولاز
+Tipline	خط البلاغات
+Todd	تود
+Tommy	تومي
+Tootsie	توتسي
+Tough Guy	الرجل القوي
+Tourist	السائح
+Tourists	السياح
+Tow Truck Driver	سائق شاحنة القطر
+Trafficker	المهرب
+Trainer	المدرب
+Trapped Driver	السائق العالق
+Troy	تروي
+Truck Driver	سائق الشاحنة
+Truckdriver	سائق الشاحنة
+Trucker	سائق الشاحنة
+Trunk Challenger	متحدي صندوق السيارة
+Tyler	تايلر
+Tyrone	تايرون
+Uason	جيسون
+Undercover Cop	الشرطي المتخفي
+Undercover Guard	الحارس المتخفي
+Uucia	لوسيا
+Vagrant	المتشرد
+Vagrants	المتشردون
+Valentina	فالنتينا
+Valet	عامل صف السيارات
+Vault Manager	مدير الخزنة
+Vero	فيرو
+Vet	الطبيب البيطري
+Vicki	فيكي
+Victim	الضحية
+Vinny	فيني
+VIP	الشخصية المهمة
+Viper	فايبر
+Visitor	الزائر
+Vocalist	المغني
+Voice	الصوت
+Voicemail	البريد الصوتي
+Voiceover	التعليق الصوتي
+Vucia	لوسيا
+Vypertec	فايبرتك
+Wade Howard	ويد هوارد
+Waiter	النادل
+Waitress	النادلة
+Wanda	واندا
+Watcher	المراقب
+Wax	واكس
+Wells	ويلز
+Wendy	ويندي
+Wesley	ويسلي
+Whiskers	ويسكرز
+Wife	الزوجة
+Willy	ويلي
+Woman	المرأة
+Worker	العامل
+Workers	العمال
+Writer	الكاتب
+Wyman	وايمن
+Yago	ياغو
+Yard Sale Owner	صاحب البيع المنزلي
+Yarelis	ياريليس
+Yasmani	ياسماني
+Yolanda	يولاندا
+Yvonne	إيفون
+Zach	زاك
+ZARIA	زاريا
+Zeek	زيك
+Zeitman	زايتمان
+Zeke	زيك
+Zoe	زوي
+Zoey	زوي
+# ---- part 2 (unreviewed) ----
+Aldo	ألدو
+Apex	إيبكس
+Cygnus	سيغنوس
+Erin	إيرين
+Joe	جو
+Kenny	كيني
+Mike	مايك
+Niko	نيكو
+Phil	فيل
+Rudi	رودي
+Tomas	توماس
+Macca	ماكا
+Jack	جاك
+Marty	مارتي
+Aunt Tee	العمة تي
+Tomás	توماس

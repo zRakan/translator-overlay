@@ -1,0 +1,31 @@
+# Translation model (Q4_K_M) on the GPU via llama-server (CUDA build). Start it first:
+#   D=$PWD/third_party/llama-b12600-cuda/llama-b12600; LD_LIBRARY_PATH=$D:$PWD/.venv/lib/python3.14/site-packages/nvidia/cu13/lib:/usr/lib/wsl/lib $D/llama-server -m models/plamo-3-translate-0.8b-Q4_K_M.gguf -ngl 99 -c 4096 --port 8080 --jinja --no-prefill-assistant
+#   (drop -ngl 99 and use the CPU build for a no-GPU setup: ~330 ms/line instead of ~46 ms)
+[region]
+x = 0.20
+y = 0.855
+w = 0.58
+h = 0.08
+
+[detect]
+threshold = 1.5
+stable_frames = 3
+fast = true
+poll_ms = 100
+center_tol = 0.14
+skip_caps = true
+
+[translate]
+backend = "chat"
+chat_url = "http://127.0.0.1:8080/v1/chat/completions"   # the pfml style rewrites this to /v1/completions
+chat_style = "plamo-pfml"   # completions prompt (PFML3 template)
+strip_speaker = true
+context = true            # previous-line context (plamo-pfml style only), see config.example.toml
+context_when = "continuation"
+
+[overlay]
+mode = "replace"
+
+[ocr]
+rec = "v5-en"
+min_score = 0.9

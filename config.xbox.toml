@@ -1,0 +1,35 @@
+# Remote-play window on Windows. Start the translation server first:  powershell -File tools\windows_server.ps1 start
+# Then:  .venv\Scripts\python.exe -m translator_overlay -c config.xbox.toml --overlay
+# [source] device: "window:<part of the window title>" (list windows: python tools\list_windows.py).
+# [region]: starting guess for the subtitle band of a 1080p picture (fractions of the captured window, title bar included).
+[source]
+device = "window:Xbox"
+
+[region]
+x = 0.20
+y = 0.855
+w = 0.58
+h = 0.08
+
+[detect]
+threshold = 1.5
+stable_frames = 3
+fast = true
+poll_ms = 100
+center_tol = 0.14
+skip_caps = true
+
+[translate]
+backend = "chat"
+chat_url = "http://127.0.0.1:8080/v1/chat/completions"   # the pfml style rewrites this to /v1/completions
+chat_style = "plamo-pfml"   # completions prompt (PFML3 template)
+strip_speaker = true
+context = true            # previous-line context (plamo-pfml style only), see config.example.toml
+context_when = "continuation"
+
+[overlay]
+mode = "replace"   # "bar" = a plain caption bar instead of covering the original text
+
+[ocr]
+rec = "v5-en"
+min_score = 0.9

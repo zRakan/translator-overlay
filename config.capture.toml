@@ -1,0 +1,48 @@
+# Capture card on Windows (console HDMI -> USB capture card -> PC). Start the translation server first:  powershell -File tools\windows_server.ps1 start
+# Find the card + its best mode:  python tools\list_cameras.py   then   python tools\camera_probe.py <index>
+# Then:  .venv\Scripts\python.exe -m translator_overlay -c config.capture.toml --show   (f = fullscreen, q = quit)
+# [source] device = cam:<index>[:1920x1080@60][:MJPG|YUY2|NV12][:dshow|msmf]  (the probe prints the best one for your card).
+# [region]: starting guess for the subtitle band of a 1080p picture (fractions of the captured frame); adjust live with r in the window.
+[source]
+device = "cam:0:1920x1080@60:MJPG:msmf"
+
+[region]
+x = 0.20
+y = 0.855
+w = 0.58
+h = 0.08
+
+[detect]
+threshold = 1.5
+stable_frames = 3
+fast = true
+poll_ms = 100
+center_tol = 0.14
+skip_caps = true
+
+[translate]
+backend = "chat"
+chat_url = "http://127.0.0.1:8080/v1/chat/completions"   # the pfml style rewrites this to /v1/completions
+chat_style = "plamo-pfml"   # completions prompt (PFML3 template)
+strip_speaker = true
+context = true            # previous-line context (plamo-pfml style only), see config.example.toml
+context_when = "always"
+
+[overlay]
+mode = "replace"   # "bar" = a plain caption bar instead of covering the original text
+
+[ocr]
+rec = "v5-en"
+min_score = 0.9
+
+[display]
+fps = 0                   # show every captured frame (lowest latency); 30 caps it for a 30 fps game
+
+[map]
+enabled = true
+
+[audio]
+enabled = false               # true = play the capture card's sound through the speakers
+input = ""                    # part of the card's audio device name (python tools/list_audio.py shows the names); "" = the default input
+output = ""                   # "" = the Windows default output
+delay_ms = 0                  # raise it if the sound arrives before the picture

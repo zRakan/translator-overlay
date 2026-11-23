@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "translator-overlay"
+version = "0.1.0"
+description = "Real-time English-to-Arabic subtitle translation for GTA VI: capture, OCR, machine translation, overlay."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Rakan Almutairi" }]
+keywords = ["subtitles", "translation", "ocr", "arabic", "games", "overlay", "capture-card"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Topic :: Games/Entertainment",
+    "Topic :: Multimedia :: Video",
+]
+requires-python = ">=3.11"
+dependencies = ["numpy", "opencv-python-headless", "pillow", "arabic-reshaper", "python-bidi"]
+
+[project.optional-dependencies]
+ocr = ["rapidocr", "onnxruntime-gpu[cuda,cudnn]", "tensorrt-cu13-libs<11"]  # TensorRT 10: ~3x faster OCR; optional, falls back to CUDA
+local = ["torch", "transformers", "sentencepiece"]  # in-process translators (backends: local, llm, plamo_hf)
+windows = ["windows-capture", "cv2-enumerate-cameras", "sounddevice"]  # window capture, capture-card tools, audio passthrough
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/zRakan/translator-overlay"
+Issues = "https://github.com/zRakan/translator-overlay/issues"
+
+[project.scripts]
+translator-overlay = "translator_overlay.__main__:main"
+
+[tool.setuptools]
+packages = ["translator_overlay"]
+
+[tool.setuptools.package-data]
+translator_overlay = ["fonts/*", "data/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

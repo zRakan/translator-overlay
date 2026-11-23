@@ -1,0 +1,26 @@
+[region]
+x = 0.20
+y = 0.855
+w = 0.58
+h = 0.08
+
+[detect]
+threshold = 1.5
+center_tol = 0.14
+skip_caps = true
+stable_frames = 3
+fast = true
+poll_ms = 200
+
+[translate]
+backend = "local"
+model = "facebook/nllb-200-distilled-600M"
+beams = 3
+strip_speaker = true
+
+[overlay]
+mode = "replace"
+
+[ocr]
+rec = "v5-en"
+min_score = 0.9

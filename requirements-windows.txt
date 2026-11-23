@@ -1,0 +1,21 @@
+# Exact versions from the working Windows 10 + RTX setup (Python 3.12). Install with:
+#   uv pip install --python .venv\Scripts\python.exe -r requirements-windows.txt
+numpy==2.5.5
+opencv-python==5.1.0.95            # the non-headless build: cv2.imshow needs it (do NOT also install opencv-python-headless)
+pillow==13.0.0
+arabic-reshaper==3.1.0
+python-bidi==0.6.12
+rapidocr==3.10.0
+onnxruntime-gpu==1.32.0
+nvidia-cublas==13.10.0.20           # CUDA 13 runtime libraries, pip-installed (no CUDA toolkit needed; needs an NVIDIA driver that supports CUDA 13)
+nvidia-cuda-nvrtc==13.5.37
+nvidia-cuda-runtime==13.5.37
+nvidia-cudnn-cu13==9.28.1.4
+nvidia-cufft==12.5.0.14
+nvidia-curand==10.4.5.25
+nvidia-nvjitlink==13.5.37
+tensorrt-cu13-libs==10.16.1.11
+windows-capture==2.0.1              # only for window capture; not needed for a capture card
+cv2-enumerate-cameras==1.4.0        # camera names for tools/list_cameras.py
+sounddevice==0.5.6                  # capture-card audio passthrough
+pytest==9.2.0                       # tests (optional)

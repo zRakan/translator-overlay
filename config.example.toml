@@ -1,0 +1,82 @@
+[source]
+device = "0"            # capture card index, or a video file path / stream URL
+
+[region]                # subtitle box as fractions of the frame (per-game profile)
+x = 0.15
+y = 0.78
+w = 0.70
+h = 0.15
+
+[detect]
+threshold = 1.5         # mean abs diff (0-255) on a 96x24 crop; short words ~2.6, raise if capture noise triggers OCR
+stable_frames = 3       # region must hold still this many frames before OCR
+fast = false            # true: also OCR on the first changed frame (2-3 frames sooner); re-reads once settled. Not for typewriter-style subtitles
+skip_caps = false       # true: drop ALL-CAPS lines (in-world signs); not for all-caps subtitle games
+poll_ms = 0             # >0: while the background keeps moving, still OCR this often (else subtitles over camera motion are missed). 100: a fading-in subtitle is read within ~4 frames at 60 fps of becoming readable (200: up to 1.3 s late, 2 of 32 subtitles never read on a 60 fps clip)
+center_tol = 0.0        # e.g. 0.14: ignore text not centred in the frame (signs, HUD)
+
+[translate]
+backend = "local"       # echo | local | http | chat (chat-completions server or cloud API)
+model = "Helsinki-NLP/opus-mt-en-ar"   # local backend (seq2seq model id)
+source = "en"
+target = "ar"
+url = "http://localhost:5000/translate"   # http backend: LibreTranslate-style API
+cache_size = 2048
+# Previous-line context for sentences split across subtitles (chat_style = "plamo-pfml" only; other backends ignore it).
+context = false           # true: give the translator the previous line(s) while they belong to one conversation
+context_when = "continuation"   # continuation = only when the line continues an unfinished sentence (no . ? ! at the end of the previous line, or this line starts lowercase)
+                                # always       = every line of a conversation gets the previous lines (worse on short lines)
+context_lines = 2         # how many previous lines to include
+context_gap_s = 5.0       # the previous line counts as the same conversation if it was on screen this recently; a longer pause drops the context
+
+[overlay]
+mode = "bar"            # bar (fixed caption) | replace (cover the original text in place)
+font = ""               # Arabic-capable .ttf; empty = auto-detect
+size = 0.05             # fallback text height / frame height
+match_size = true       # size the Arabic from the game's own text height
+size_scale = 0.82       # Arabic font px per px of game line height
+blur = true             # blurred frame backdrop (false = solid box)
+blur_sigma = 12.0
+color = [255, 255, 255]
+bg = [0, 0, 0]
+bg_opacity = 0.55       # blur: how much the backdrop is darkened; solid: box alpha
+bar_y = 0.95            # bar mode: bottom edge (<=0.5 puts the bar at the top)
+speaker = true          # 'NAME: text' subtitles: the model translates only the text; the name is put back in front of the Arabic in a colour (needs [translate] strip_speaker = true)
+speaker_arabic = true   # a listed name is written in Arabic (translator_overlay/data/speaker_names_ar.tsv, 707 names; English letters would break the right-to-left line); others stay English
+# speaker_palette = [[255, 214, 102], [120, 200, 255]]   # RGB colours handed out to names (a name always gets the same one)
+
+[ocr]
+rec = "v5-en"           # English-only recognizer (default); "v6" = multilingual PP-OCRv6
+engine = "auto"         # auto = TensorRT -> CUDA -> CPU. per 1113x86 subtitle crop: TensorRT ~5 ms, CUDA ~11 ms, CPU ~24 ms (same on Linux and Windows)
+cache_dir = ""          # TensorRT engine cache (first run builds it, ~25 s); empty = ~/.cache/translator-overlay/trt
+min_score = 0.0         # ignore reads whose weakest line scores below this; ~0.9 drops garbled reads during motion
+
+[display]                 # the --show window (capture card)
+scale = "sharp"           # off | cubic | sharp: how the video is scaled up to the window (sharp = bicubic + light sharpening)
+sharpen = 0.5             # sharpening strength for scale = "sharp"
+fps = 0                   # cap the window's frame rate; 0 = every captured frame. 30 for a 30 fps game on a 60 fps card
+
+[map]                     # second state: while the MAP tab is open, translate the hovered card and the map labels instead of the subtitles
+enabled = false
+# "Map open" = enough pink pixels in the MAP tab word (it is pink when selected, white otherwise): ~20 microseconds, no OCR.
+# tab_box = [0.470, 0.031, 0.500, 0.060]   # x0, y0, x1, y1 as fractions of the frame (1080p)
+# min_frac = 0.08                           # fraction of that box that must be pink (~0.15-0.24)
+# poll_ms = 250                             # while open: look for the card this often (card text is OCR'd, each block translated)
+# align = "left"                            # where the Arabic sits inside the English text's box: left | right | center
+# cache = "map_translations.json"           # saved translations (English -> Arabic); shown instantly next time. Edit it to pin wording.
+# Works with --show / --out (the card is drawn into the picture), not with the click-through --overlay window.
+
+[audio]                   # capture-card sound -> speakers (the video window has no audio by itself); needs sounddevice
+enabled = false
+input = ""                # substring of the capture device name (tools/list_audio.py); "" = system default input
+output = ""               # "" = system default output
+delay_ms = 0              # hold the sound back to line it up with the picture
+volume = 1.0
+
+[debug]                   # settings of the --debug log (written only when the --debug flag is given; see README)
+dir = "debug"
+crops = true              # save the crop the OCR read for each translation / dropped read
+
+[record]                  # --record: show the card and record it (no OCR / translation with --no-ocr); windows_run.ps1 start -Record does both
+dir = "recordings"        # --record auto writes <dir>/rec-<time>.mkv (+ .mka sound, FILE.marks.txt with the k marks)
+ffmpeg = ""               # path to ffmpeg; "" = the one on the PATH
